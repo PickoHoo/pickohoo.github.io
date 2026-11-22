@@ -1,0 +1,32 @@
+# Deploy this static site to GitHub Pages and verify it is live (no secrets used).
+name: pages
+on:
+  push: {branches: [main]}
+  workflow_dispatch: {}
+permissions: {contents: read, pages: write, id-token: write}
+concurrency: {group: pages, cancel-in-progress: false}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: {name: github-pages, url: "${{ steps.d.outputs.page_url }}"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with: {enablement: true}
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: "."}
+      - id: d
+        uses: actions/deploy-pages@v4
+  verify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: HTTP checks
+        run: |
+          sleep 30
+          for u in / /what-to-check-before-buying-a-plumbing-tool-kit.html /pickora-logo.png /cards/what-to-check-before-buying-a-plumbing-tool-kit-pin.png /feeds/plumbing-tools.xml; do
+            echo "$(curl -s -o /dev/null -w '%{http_code}' https://pickohoo.github.io$u) $u"
+          done
+          L=$(curl -s https://pickohoo.github.io/what-to-check-before-buying-a-plumbing-tool-kit.html | grep -o 'https://www.awin1.com/pclick.php[^"]*' | head -1 | sed 's/&amp;/\&/g')
+          echo "awin link: ${L:0:60}..."
+          echo "awin redirect: $(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url}' "$L" | cut -c1-80)"
