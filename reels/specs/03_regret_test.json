@@ -1,0 +1,11 @@
+{
+  "title": "The Toolkit Regret Test",
+  "music": {"bpm": 124, "key": -3},
+  "scenes": [
+    {"type": "quiz", "dur": 5.2, "kicker": "THE TOOLKIT REGRET TEST", "question": "Which mistake would YOU make?", "options": ["I'd pick the most pieces", "I'd find space for it later", "I'd grab the lowest price"], "cta": "Comment A, B or C"},
+    {"type": "reveal", "dur": 4.2, "letter": "A", "title": "The piece-count trap", "body": "A bigger number doesn't mean the right tools.", "fix": "List your jobs first"},
+    {"type": "reveal", "dur": 4.2, "letter": "B", "title": "The storage surprise", "body": "If it doesn't fit your van or drawer, it gets left behind.", "fix": "Check the case size"},
+    {"type": "reveal", "dur": 4.2, "letter": "C", "title": "The checkout creep", "body": "Delivery and stock can change the real cost.", "fix": "Compare the delivered price"},
+    {"type": "cta", "dur": 3.6, "title": "Hoo knows", "sub": "a good pick?", "button": "Full test in bio"}
+  ]
+}

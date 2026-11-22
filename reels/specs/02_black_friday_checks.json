@@ -1,0 +1,11 @@
+{
+  "title": "Black Friday: 3 checks before you buy",
+  "music": {"bpm": 116, "key": 0},
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "BLACK FRIDAY", "title": "Don't buy anything yet...", "sub": "until you do these 3 checks", "bubble": "psst!"},
+    {"type": "tip", "dur": 3.8, "num": 1, "title": "Check the price history", "body": "Lots of \"deals\" were cheaper earlier in the year."},
+    {"type": "tip", "dur": 3.8, "num": 2, "title": "Match the model number", "body": "Some Black Friday versions are cut-down models."},
+    {"type": "tip", "dur": 3.8, "num": 3, "title": "Set your max price first", "body": "A countdown timer is not a reason to spend more."},
+    {"type": "cta", "dur": 3.8, "title": "No shopping hype.", "sub": "Just clever finds.", "button": "Follow PickoHoo"}
+  ]
+}

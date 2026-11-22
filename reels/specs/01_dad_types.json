@@ -1,0 +1,12 @@
+{
+  "title": "What kind of dad is yours? Christmas gifts under £30",
+  "snow": true,
+  "music": {"bpm": 120, "bells": true, "key": 2},
+  "scenes": [
+    {"type": "hook", "dur": 3.2, "kicker": "CHRISTMAS GIFTS UNDER £30", "title": "What kind of dad is yours?", "hat": true, "bubble": "hoo hoo!"},
+    {"type": "pick", "dur": 4.6, "label": "The garden dad", "image": "assets/gardening-gift-faithfull-prestige.png", "price": "£22.95", "name": "Faithfull trowel + fork set", "why": "Gift-boxed, for potting and planting", "hat": true},
+    {"type": "pick", "dur": 4.6, "label": "The DIY dad", "image": "assets/diy-screwdriver-set-sealey-premier.png", "price": "£26.95", "name": "Sealey Premier 8-piece screwdrivers", "why": "Slotted, Phillips and Pozi in one tray", "hat": true},
+    {"type": "pick", "dur": 4.6, "label": "The woodwork dad", "image": "assets/woodworking-gift-sirius-carpentry-tool-kit.png", "price": "£26.99", "name": "Sirius 4-piece carpentry kit", "why": "Plane, square, bevel and gauge in a wooden case", "hat": true},
+    {"type": "cta", "dur": 3.8, "title": "Clever finds.", "sub": "Better buys.", "button": "Links in bio", "hat": true}
+  ]
+}
