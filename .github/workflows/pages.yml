@@ -29,4 +29,4 @@ jobs:
           done
           L=$(curl -s https://pickohoo.github.io/what-to-check-before-buying-a-plumbing-tool-kit.html | grep -o 'https://www.awin1.com/pclick.php[^"]*' | head -1 | sed 's/&amp;/\&/g')
           echo "awin link: ${L:0:60}..."
-          echo "awin redirect: $(curl -s -o /dev/null -w '%{http_code} -> %{redirect_url}' "$L" | cut -c1-80)"
+          echo "awin link present (not followed, to keep click stats clean): ${L:0:40}..."
