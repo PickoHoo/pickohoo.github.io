@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7B955"/><stop offset="1" stop-color="#EE9A2E"/></linearGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D5A41"/><stop offset="1" stop-color="#123A2A"/></linearGradient>
+  </defs>
+  <rect x="4" y="4" width="192" height="192" rx="48" fill="url(#bg)"/>
+  <!-- head with soft tufts -->
+  <path d="M100 52 C 78 52 62 44 50 30 C 44 52 40 70 40 96 C 40 140 66 168 100 168 C 134 168 160 140 160 96 C 160 70 156 52 150 30 C 138 44 122 52 100 52 Z" fill="url(#head)"/>
+  <!-- heart face mask -->
+  <path d="M100 82 C 88 66 54 66 54 98 C 54 126 78 146 100 152 C 122 146 146 126 146 98 C 146 66 112 66 100 82 Z" fill="#FBF6EC"/>
+  <!-- eyes -->
+  <circle cx="78" cy="100" r="16" fill="#14211B"/><circle cx="122" cy="100" r="16" fill="#14211B"/>
+  <circle cx="83" cy="94" r="6" fill="#fff"/><circle cx="127" cy="94" r="6" fill="#fff"/>
+  <circle cx="74" cy="106" r="2.6" fill="#fff"/><circle cx="118" cy="106" r="2.6" fill="#fff"/>
+  <!-- beak -->
+  <path d="M93 114 Q100 110 107 114 L101 126 Q100 128 99 126 Z" fill="#F2A93B"/>
+  <!-- cheeks -->
+  <ellipse cx="66" cy="122" rx="8" ry="4.5" fill="#F4A6A0" opacity=".85"/><ellipse cx="134" cy="122" rx="8" ry="4.5" fill="#F4A6A0" opacity=".85"/>
+</svg>
